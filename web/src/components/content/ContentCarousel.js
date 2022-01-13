@@ -21,7 +21,7 @@ const Slide = ({ slide }) => {
         variant="h4"
         sx={{
           textAlign: "center",
-          m: 2,
+          m: 1,
           color: "#19305A",
           fontWeight: 700,
         }}
@@ -41,7 +41,12 @@ const Slide = ({ slide }) => {
         {slide.contentText}
       </Typography>
 
-      <a href={slide.ctaLink}>
+      <a
+        href={slide.ctaLink}
+        style={{ textDecoration: "none" }}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <Button variant="contained" color="primary">
           {slide.ctaText}
         </Button>
@@ -52,7 +57,7 @@ const Slide = ({ slide }) => {
 
 export const ContentCarousel = ({ carouselArray }) => {
   const [carouselOptions, setCarouselOptions] = useState({
-    autoPlay: false,
+    autoPlay: true,
     animation: "slide",
     indicators: true,
     timeout: 500,
@@ -60,15 +65,15 @@ export const ContentCarousel = ({ carouselArray }) => {
     navButtonsAlwaysInvisible: true,
   })
 
-  // useEffect(() => {
-  //   if (carouselArray.length === 1) {
-  //     setCarouselOptions({
-  //       ...carouselOptions,
-  //       navButtonsAlwaysInvisible: true,
-  //       indicators: false,
-  //     })
-  //   }
-  // }, [carouselArray])
+  useEffect(() => {
+    if (carouselArray.length === 1) {
+      setCarouselOptions({
+        ...carouselOptions,
+        navButtonsAlwaysInvisible: true,
+        indicators: false,
+      })
+    }
+  }, [carouselArray])
   return (
     <Carousel
       autoPlay={carouselOptions.autoPlay}

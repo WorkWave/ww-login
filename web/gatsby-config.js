@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env`,
+})
+
 module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -11,9 +15,9 @@ module.exports = {
       options: {
         projectId: "7wxhdiq5",
         dataset: "production",
-        // token: process.env.MY_SANITY_TOKEN,
-        // watchMode: true,
-        // overlayDrafts: true,
+        token: process.env.MY_SANITY_TOKEN,
+        watchMode: true,
+        overlayDrafts: true,
       },
     },
     `gatsby-transformer-sharp`,

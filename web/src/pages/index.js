@@ -6,10 +6,6 @@ import { Box } from "@mui/material"
 
 import Layout from "../components/layout"
 
-const IndexPage = () => (
-  <Layout>
-    <Box>whatever</Box>
-  </Layout>
-)
+const IndexPage = () => <Layout></Layout>
 
 export default IndexPage
