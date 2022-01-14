@@ -1,5 +1,7 @@
 import { createTheme, responsiveFontSizes } from "@mui/material/styles"
 
+import background from "./images/login-page-bg-image.jpg"
+
 let theme = createTheme({
   palette: {
     primary: {
@@ -31,14 +33,34 @@ let theme = createTheme({
   typography: {
     fontFamily: ["Poppins", "sans-serif"].join(","),
   },
+  components: {
+    MuiCssBaseline: {
+      styleOverrides: {
+        body: {
+          backgroundImage: `url(${background})`,
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center center",
+          backgroundSize: "cover",
+          backgroundAttachment: "fixed",
+          height: "100vh",
+          maxHeight: "100vh",
+        },
+      },
+    },
+  },
   overrides: {
-    // MuiCssBaseline: {
-    //   "@global": {
-    //     body: {
-    //       backgroundColor: "#b9d032",
-    //     },
-    //   },
-    // },
+    MuiCssBaseline: {
+      "@global": {
+        body: {
+          backgroundImage: `url(${background})`,
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center center",
+          backgroundSize: "cover",
+          backgroundAttachment: "fixed",
+          height: "100vh",
+        },
+      },
+    },
     // MuiContainer: {
     // 	disableGutters: false,
     // },

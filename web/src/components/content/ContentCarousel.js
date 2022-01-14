@@ -15,7 +15,7 @@ const Slide = ({ slide }) => {
       <GatsbyImage
         image={slide.contentImage.asset?.gatsbyImageData}
         alt="chart"
-        style={{ borderRadius: "10px" }}
+        style={{ borderRadius: "10px", maxHeight: "70vh" }}
       />
       <Typography
         variant="h4"
