@@ -9,7 +9,12 @@ module.exports = {
     "gatsby-plugin-material-ui",
     `gatsby-plugin-preload-fonts`,
     "gatsby-plugin-image",
-    `gatsby-plugin-gatsby-cloud`,
+    {
+     resolve: `gatsby-plugin-gatsby-cloud`,
+     options: {
+       mergeSecurityHeaders: false
+     }
+    },
     {
       resolve: "gatsby-source-sanity",
       options: {
