@@ -10,10 +10,15 @@ module.exports = {
     `gatsby-plugin-preload-fonts`,
     "gatsby-plugin-image",
     {
-     resolve: `gatsby-plugin-gatsby-cloud`,
-     options: {
-       mergeSecurityHeaders: false
-     }
+      resolve: `gatsby-plugin-gatsby-cloud`,
+      options: {
+        mergeSecurityHeaders: false,
+      },
+      headers: {
+        "/*": [
+          "Access-Control-Allow-Origin: https://pr-1221.deyrqhtj9y823.amplifyapp.com/",
+        ],
+      },
     },
     {
       resolve: "gatsby-source-sanity",
