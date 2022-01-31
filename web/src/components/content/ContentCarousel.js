@@ -11,17 +11,18 @@ const Slide = ({ slide }) => {
       direction="column"
       alignItems="center"
       justifyContent="center"
+      sx={{ mb: 1 }}
     >
       <GatsbyImage
         image={slide.contentImage.asset?.gatsbyImageData}
         alt="chart"
-        style={{ borderRadius: "10px", maxHeight: "70vh" }}
+        style={{ borderRadius: "10px", maxHeight: "65vh" }}
       />
       <Typography
         variant="h4"
         sx={{
           textAlign: "center",
-          m: 1,
+          m: 2,
           color: "#19305A",
           fontWeight: 700,
         }}

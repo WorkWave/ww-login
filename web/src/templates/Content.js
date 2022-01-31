@@ -26,12 +26,7 @@ export const query = graphql`
       content {
         contentImage {
           asset {
-            gatsbyImageData(
-              layout: CONSTRAINED
-              # height: 600
-              # width: 1000
-              placeholder: BLURRED
-            )
+            gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
           }
         }
         contentHeader

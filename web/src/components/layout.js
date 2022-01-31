@@ -11,7 +11,7 @@ const Layout = ({ children }) => {
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <meta name="viewport" content="initial-scale=1, width=device-width" />
-      <Container fixed sx={{ height: "100vh" }}>
+      <Container fixed sx={{ height: "100vh", overflow: "hidden" }}>
         <main>{children}</main>
       </Container>
     </ThemeProvider>
