@@ -9,11 +9,13 @@ import theme from "../theme"
 const Layout = ({ children }) => {
   return (
     <ThemeProvider theme={theme}>
-      <CssBaseline />
-      <meta name="viewport" content="initial-scale=1, width=device-width" />
-      <Container fixed sx={{ height: "100vh", overflow: "hidden" }}>
-        <main>{children}</main>
-      </Container>
+      <div style={{ maxHeight: "100vh" }}>
+        <CssBaseline />
+        <meta name="viewport" content="initial-scale=1, width=device-width" />
+        <Container fixed sx={{ height: "100vh", overflow: "hidden" }}>
+          <main>{children}</main>
+        </Container>
+      </div>
     </ThemeProvider>
   )
 }
