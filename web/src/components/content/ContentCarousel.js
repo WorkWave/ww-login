@@ -2,9 +2,11 @@ import React, { useState, useEffect } from "react"
 import { GatsbyImage } from "gatsby-plugin-image"
 import Carousel from "react-material-ui-carousel"
 
+import useMediaQuery from "@mui/material/useMediaQuery"
 import { Grid, Button, Typography } from "@mui/material"
 
 const Slide = ({ slide }) => {
+  const md = useMediaQuery(theme => theme.breakpoints.down("md"))
   return (
     <Grid
       container
@@ -36,7 +38,7 @@ const Slide = ({ slide }) => {
           textAlign: "center",
           color: "#19305A",
           mb: 1,
-          maxWidth: "75%",
+          maxWidth: md ? "90%" : "70%",
         }}
       >
         {slide.contentText}
