@@ -13,7 +13,7 @@ const Slide = ({ slide }) => {
       direction="column"
       alignItems="center"
       justifyContent="center"
-      sx={{ mb: 1 }}
+      sx={{ mb: 0.5 }}
     >
       <GatsbyImage
         image={slide.contentImage.asset?.gatsbyImageData}
