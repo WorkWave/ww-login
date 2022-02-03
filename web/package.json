@@ -10,6 +10,7 @@
     "@mui/icons-material": "^5.2.5",
     "@mui/material": "^5.2.8",
     "@mui/styles": "^5.2.3",
+    "@rottitime/react-hook-message-event": "^1.0.8",
     "dotenv": "^11.0.0",
     "esm": "^3.2.25",
     "gatsby": "^4.4.0",
