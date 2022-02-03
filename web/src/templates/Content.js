@@ -1,12 +1,9 @@
 import React from "react"
 import { graphql } from "gatsby"
 
-import useMediaQuery from "@mui/material/useMediaQuery"
-
 import { ContentCarousel } from "../components/content/ContentCarousel"
 
 export default function Content({ data: { content } }) {
-  // const md = useMediaQuery(theme => theme.breakpoints.down("md"))
   return (
     <>
       <div style={{ marginTop: "7vh" }}>
