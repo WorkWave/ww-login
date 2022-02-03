@@ -8,7 +8,7 @@ import CssBaseline from "@mui/material/CssBaseline"
 import theme from "../theme"
 
 const Layout = ({ children, location }) => {
-  const params = new URLSearchParams(location.search)
+  const params = queryString.parse(location.search)
   console.log(params)
   return (
     <ThemeProvider theme={theme}>
