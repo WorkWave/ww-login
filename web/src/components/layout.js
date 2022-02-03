@@ -13,9 +13,11 @@ const Layout = ({ children }) => {
     width: null,
   })
   useMessage("height", (send, payload) => {
+    console.log(payload)
     setDimensions({ ...dimensions, height: payload })
   })
   useMessage("width", (send, payload) => {
+    console.log(payload)
     setDimensions({ ...dimensions, width: payload })
   })
   console.log(dimensions)
