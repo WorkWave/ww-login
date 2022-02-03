@@ -7,20 +7,9 @@ import CssBaseline from "@mui/material/CssBaseline"
 
 import theme from "../theme"
 
-const Layout = ({ children }) => {
-  const [dimensions, setDimensions] = useState({
-    height: null,
-    width: null,
-  })
-  useMessage("height", (send, payload) => {
-    console.log(payload)
-    setDimensions({ ...dimensions, height: payload })
-  })
-  useMessage("width", (send, payload) => {
-    console.log(payload)
-    setDimensions({ ...dimensions, width: payload })
-  })
-  console.log(dimensions)
+const Layout = ({ children, location }) => {
+  const params = new URLSearchParams(location.search)
+  console.log(params)
   return (
     <ThemeProvider theme={theme}>
       <div style={{ maxHeight: "100vh" }}>
