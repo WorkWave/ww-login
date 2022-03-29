@@ -17,6 +17,11 @@ export default {
 			type: 'string',
 		},
 		{
+			name: 'wistiaUrl',
+			title: 'Wistia URL',
+			type: 'string',
+		},
+		{
 			name: 'contentText',
 			title: 'Content Text',
 			type: 'text',

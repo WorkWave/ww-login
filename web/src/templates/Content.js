@@ -6,7 +6,7 @@ import { ContentCarousel } from "../components/content/ContentCarousel"
 export default function Content({ data: { content } }) {
   return (
     <>
-      <div style={{ marginTop: "7vh" }}>
+      <div>
         <ContentCarousel carouselArray={content.content} />
       </div>
     </>
@@ -29,6 +29,7 @@ export const query = graphql`
             gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
           }
         }
+        wistiaUrl
         contentHeader
         contentText
         ctaText
