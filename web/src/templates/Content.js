@@ -3,12 +3,14 @@ import { graphql } from "gatsby"
 
 import { ContentCarousel } from "../components/content/ContentCarousel"
 
+import { Grid } from "@mui/material"
+
 export default function Content({ data: { content } }) {
   return (
     <>
-      <div>
+      <Grid direction='row' alignItems='center'>
         <ContentCarousel carouselArray={content.content} />
-      </div>
+      </Grid>
     </>
   )
 }

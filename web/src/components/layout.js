@@ -10,13 +10,10 @@ import theme from "../theme"
 const Layout = ({ children, location }) => {
   console.log(location)
 
-    useMessage('width', (send, payload) => {
+    useMessage('*', (send, payload) => {
     console.log(payload)
   })
 
-      useMessage('height', (send, payload) => {
-    console.log(payload)
-  })
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
@@ -26,9 +23,8 @@ const Layout = ({ children, location }) => {
         <Container
           fixed
           sx={{
-            height: `${location?.search?.height}px`,
-            width: `${location?.search?.width}px`,
             overflow: "hidden",
+            paddingTop: '5%'
           }}
         >
           {children}
