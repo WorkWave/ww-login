@@ -10,7 +10,7 @@ import theme from "../theme"
 const Layout = ({ children, location }) => {
   console.log(location)
 
-    useMessage('*', (send, payload) => {
+  useMessage("*", (send, payload) => {
     console.log(payload)
   })
 
@@ -18,18 +18,16 @@ const Layout = ({ children, location }) => {
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <meta name="viewport" content="initial-scale=1, width=device-width" />
-
-      <main>
-        <Container
-          fixed
-          sx={{
-            overflow: "hidden",
-            paddingTop: '5%'
-          }}
-        >
-          {children}
-        </Container>
-      </main>
+      <Container
+        fixed
+        sx={{
+          overflow: "hidden",
+          // paddingTop: "15%",
+          height: "100vh",
+        }}
+      >
+        {children}
+      </Container>
     </ThemeProvider>
   )
 }
