@@ -86,7 +86,7 @@ const Slide = ({ slide }) => {
             textAlign: "center",
             color: "#19305A",
             mb: 1,
-            maxWidth: "75%",
+            // maxWidth: "75%",
             lineHeight: "1.2",
           }}
         >
