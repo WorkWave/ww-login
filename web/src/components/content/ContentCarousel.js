@@ -23,9 +23,9 @@ const Slide = ({ slide }) => {
       <Grid
         item
         container
-        direction="column"
-        alignItems="center"
-        justifyContent="flex-end"
+        // direction="column"
+        // alignItems="center"
+        // justifyContent="flex-end"
         sx={{ mb: 0.5, height: "60vh" }}
       >
         {contentImage ? (
