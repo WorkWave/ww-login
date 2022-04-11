@@ -136,14 +136,13 @@ export const ContentCarousel = ({ carouselArray }) => {
       timeout={carouselOptions.timeout}
       navButtonsAlwaysVisible={carouselOptions.navButtonsAlwaysVisible}
       navButtonsAlwaysInvisible={carouselOptions.navButtonsAlwaysInvisible}
-      indicatorContainerProps={{
-        style: { marginTop: "3px" },
-      }}
+      // indicatorContainerProps={{
+      //   style: { marginTop: "3px" },
+      // }}
     >
       {carouselArray.map((slide, index) => (
         <>
           <Slide slide={slide} key={index} />
-          <Typography>ldsafjalksdfj</Typography>
         </>
       ))}
     </Carousel>
