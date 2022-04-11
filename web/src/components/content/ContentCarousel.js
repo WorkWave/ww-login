@@ -19,7 +19,7 @@ const Slide = ({ slide }) => {
   const sm = useMediaQuery("(max-width: 600px)")
   const xs = useMediaQuery("(max-width: 480px)")
   return (
-    <>
+    <Grid container>
       <Grid
         item
         container
@@ -105,7 +105,7 @@ const Slide = ({ slide }) => {
           </Button>
         </a>
       </Grid>
-    </>
+    </Grid>
   )
 }
 
