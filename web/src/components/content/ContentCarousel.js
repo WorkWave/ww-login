@@ -67,7 +67,7 @@ const Slide = ({ slide }) => {
         container
         direction="column"
         alignItems="center"
-        justifyContent="center"
+        justifyContent="flex-end"
       >
         <Typography
           variant="h4"

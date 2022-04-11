@@ -11,7 +11,12 @@ export default function Content({ data: { content } }) {
       direction="column"
       alignItems="center"
       justify="center"
-      style={{ height: "100vh" }}
+      style={{
+        position: "absolute",
+        top: "50%",
+        left: "50%",
+        transform: "translate(-50%, -50%)",
+      }}
     >
       <ContentCarousel carouselArray={content.content} />
     </Grid>
