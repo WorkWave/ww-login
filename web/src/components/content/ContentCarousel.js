@@ -21,11 +21,12 @@ const Slide = ({ slide }) => {
   return (
     <>
       <Grid
-        item
-        container
-        direction="column"
-        alignItems="center"
-        sx={{ mb: 0.5, height: "60vh" }}
+      // item
+      // container
+      // direction="column"
+      // alignItems="center"
+      // justifyContent="flex-end"
+      // sx={{ mb: 0.5, height: "60vh" }}
       >
         {contentImage ? (
           contentImage.asset.gatsbyImageData.images?.sources.length ? (
@@ -44,10 +45,10 @@ const Slide = ({ slide }) => {
           <div
             style={{
               position: "relative",
-              paddingTop: "46.25%",
-              minHeight: "44%",
-              maxHeight: "76%",
-              minWidth: "92%",
+              paddingTop: md ? "46.25%" : "36.25%",
+              minHeight: md ? "44%" : "40%",
+              maxHeight: md ? "76%" : "65%",
+              minWidth: md ? "92%" : "65%",
               border: "1px solid #d8dee0",
             }}
           >
@@ -62,11 +63,11 @@ const Slide = ({ slide }) => {
         )}
       </Grid>
       <Grid
-        item
-        container
-        direction="column"
-        alignItems="center"
-        justifyContent="flex-end"
+      // item
+      // container
+      // direction="column"
+      // alignItems="center"
+      // justifyContent="flex-end"
       >
         <Typography
           variant="h4"

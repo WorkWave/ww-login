@@ -20,11 +20,11 @@ const Layout = ({ children, location }) => {
       <meta name="viewport" content="initial-scale=1, width=device-width" />
       <Container
         fixed
-        sx={{
-          overflow: "hidden",
-          paddingTop: "15%",
-          height: "100vh",
-        }}
+        // sx={{
+        //   overflow: "hidden",
+        //   paddingTop: "15%",
+        //   height: "100vh",
+        // }}
       >
         {children}
       </Container>
