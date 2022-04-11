@@ -19,7 +19,7 @@ const Slide = ({ slide }) => {
   const sm = useMediaQuery("(max-width: 600px)")
   const xs = useMediaQuery("(max-width: 480px)")
   return (
-    <Grid container>
+    <>
       <Grid
         item
         container
@@ -45,10 +45,10 @@ const Slide = ({ slide }) => {
           <div
             style={{
               position: "relative",
-              paddingTop: md ? "46.25%" : "36.25%",
-              minHeight: md ? "44%" : "40%",
-              maxHeight: md ? "76%" : "65%",
-              minWidth: md ? "92%" : "65%",
+              paddingTop: "46.25%",
+              minHeight: "44%",
+              maxHeight: "76%",
+              minWidth: "92%",
               border: "1px solid #d8dee0",
             }}
           >
@@ -105,7 +105,7 @@ const Slide = ({ slide }) => {
           </Button>
         </a>
       </Grid>
-    </Grid>
+    </>
   )
 }
 
