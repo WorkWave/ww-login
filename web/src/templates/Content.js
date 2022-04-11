@@ -13,9 +13,9 @@ export default function Content({ data: { content } }) {
       justify="center"
       style={{
         position: "absolute",
-        top: "50%",
-        left: "50%",
-        transform: "translate(-50%, -50%)",
+        top: "60%",
+        left: "15%",
+        transform: "translate(-8%, -60%)",
       }}
     >
       <ContentCarousel carouselArray={content.content} />

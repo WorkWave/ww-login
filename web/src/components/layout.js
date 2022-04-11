@@ -27,7 +27,7 @@ const Layout = ({ children, location }) => {
         }}
       >
         {children}
-      </divr>
+      </div>
     </ThemeProvider>
   )
 }
