@@ -25,7 +25,7 @@ const Slide = ({ slide }) => {
         container
         direction="column"
         alignItems="center"
-        justifyContent="flex-end"
+        justifyContent="center"
         sx={{ mb: 0.5, height: "80vh" }}
       >
         {contentImage ? (
