@@ -25,10 +25,9 @@ const Slide = ({ slide }) => {
         container
         direction="column"
         alignItems="center"
-        justifyContent="flex-end"
         sx={{ mb: 0.5, height: "60vh" }}
       >
-        {/* {contentImage ? (
+        {contentImage ? (
           contentImage.asset.gatsbyImageData.images?.sources.length ? (
             <img src={slide.contentImage.asset.url} alt="image" />
           ) : (
@@ -103,8 +102,7 @@ const Slide = ({ slide }) => {
           <Button variant="contained" color="primary">
             {ctaText}
           </Button>
-        </a> */}
-        <Typography>asdlfjaskdfjklsadjf</Typography>
+        </a>
       </Grid>
     </>
   )

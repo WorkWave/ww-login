@@ -10,7 +10,6 @@ export default function Content({ data: { content } }) {
     <>
       <Grid>
         <ContentCarousel carouselArray={content.content} />
-        sadlfjalkdfjlaksdj
       </Grid>
     </>
   )
