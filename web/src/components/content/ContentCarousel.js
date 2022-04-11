@@ -28,7 +28,7 @@ const Slide = ({ slide }) => {
         justifyContent="flex-end"
         sx={{ mb: 0.5, height: "60vh" }}
       >
-        {contentImage ? (
+        {/* {contentImage ? (
           contentImage.asset.gatsbyImageData.images?.sources.length ? (
             <img src={slide.contentImage.asset.url} alt="image" />
           ) : (
@@ -103,7 +103,8 @@ const Slide = ({ slide }) => {
           <Button variant="contained" color="primary">
             {ctaText}
           </Button>
-        </a>
+        </a> */}
+        <Typography>asdlfjaskdfjklsadjf</Typography>
       </Grid>
     </>
   )
