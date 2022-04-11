@@ -22,7 +22,7 @@ const Layout = ({ children, location }) => {
         fixed
         sx={{
           overflow: "hidden",
-          paddingTop: "15%",
+          // paddingTop: "15%",
           height: "100vh",
         }}
       >

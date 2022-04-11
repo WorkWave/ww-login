@@ -7,11 +7,14 @@ import { Grid } from "@mui/material"
 
 export default function Content({ data: { content } }) {
   return (
-    <>
-      <Grid>
-        <ContentCarousel carouselArray={content.content} />
-      </Grid>
-    </>
+    <Grid
+      direction="column"
+      alignItems="center"
+      justify="center"
+      style={{ height: "100vh" }}
+    >
+      <ContentCarousel carouselArray={content.content} />
+    </Grid>
   )
 }
 
