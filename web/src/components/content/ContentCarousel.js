@@ -25,8 +25,8 @@ const Slide = ({ slide }) => {
         container
         direction="column"
         alignItems="center"
-        justifyContent="center"
-        sx={{ mb: 0.5, height: "80vh" }}
+        justifyContent="flex-end"
+        sx={{ mb: 0.5 }}
       >
         {contentImage ? (
           contentImage.asset.gatsbyImageData.images?.sources.length ? (
