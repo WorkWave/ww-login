@@ -21,8 +21,8 @@ const Layout = ({ children, location }) => {
       <Container
         fixed
         sx={{
-          // overflow: "hidden",
-          // paddingTop: "15%",
+          overflow: "hidden",
+          paddingTop: "15%",
           height: "100vh",
         }}
       >

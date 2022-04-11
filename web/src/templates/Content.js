@@ -8,7 +8,7 @@ import { Grid } from "@mui/material"
 export default function Content({ data: { content } }) {
   return (
     <>
-      <Grid>
+      <Grid style={{ height: "100vh" }}>
         <ContentCarousel carouselArray={content.content} />
       </Grid>
     </>
