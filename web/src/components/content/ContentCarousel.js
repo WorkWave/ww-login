@@ -45,10 +45,9 @@ const Slide = ({ slide }) => {
           <div
             style={{
               position: "relative",
-              paddingTop: md ? "46.25%" : "36.25%",
-              minHeight: md ? "44%" : "40%",
-              maxHeight: md ? "76%" : "65%",
-              minWidth: md ? "92%" : "65%",
+              paddingTop: "56.25%",
+              minHeight: "100%",
+              minWidth: "100%",
               border: "1px solid #d8dee0",
             }}
           >
