@@ -95,7 +95,7 @@ const Slide = ({ slide }) => {
 
         <a
           href={ctaLink}
-          style={{ textDecoration: "none" }}
+          style={{ textDecoration: "none", marginTop: "1rem" }}
           target="_blank"
           rel="noopener noreferrer"
         >
