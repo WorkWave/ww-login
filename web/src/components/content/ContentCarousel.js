@@ -28,7 +28,7 @@ const Slide = ({ slide }) => {
         sx={{ mb: 0.5 }}
       >
         {contentImage ? (
-          <Image contentImage={contentImage} slide={slide} />
+          <Image contentImage={contentImage} />
         ) : (
           <Video wistiaUrl={wistiaUrl} />
         )}
