@@ -2,6 +2,8 @@ import React from "react"
 
 import ReactPlayer from "react-player/wistia"
 
+//paddingTop creates aspect ratio for responsive video
+
 export const Video = ({ wistiaUrl }) => {
   return (
     <div
