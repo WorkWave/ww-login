@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react"
-import { GatsbyImage } from "gatsby-plugin-image"
 import Carousel from "react-material-ui-carousel"
-import ReactPlayer from "react-player/wistia"
 
-import { Grid, Button, Typography, useMediaQuery } from "@mui/material"
+import { Grid } from "@mui/material"
+
+import { SlideFooter } from "./CarouselSlides/SlideFooter"
+import { Image } from "./CarouselSlides/Image"
+import { Video } from "./CarouselSlides/Video"
 
 const Slide = ({ slide }) => {
   const {
@@ -15,9 +17,6 @@ const Slide = ({ slide }) => {
     ctaLink,
   } = slide
 
-  const md = useMediaQuery("(max-width: 900px)")
-  const sm = useMediaQuery("(max-width: 600px)")
-  const xs = useMediaQuery("(max-width: 480px)")
   return (
     <>
       <Grid
@@ -29,81 +28,17 @@ const Slide = ({ slide }) => {
         sx={{ mb: 0.5 }}
       >
         {contentImage ? (
-          contentImage.asset.gatsbyImageData.images?.sources.length ? (
-            <img src={slide.contentImage.asset.url} alt="image" />
-          ) : (
-            <GatsbyImage
-              image={contentImage?.asset?.gatsbyImageData}
-              alt="chart"
-              imgStyle={{ objectFit: "contain" }}
-              style={{
-                borderRadius: "10px",
-              }}
-            />
-          )
+          <Image contentImage={contentImage} slide={slide} />
         ) : (
-          <div
-            style={{
-              position: "relative",
-              paddingTop: "56.25%",
-              minHeight: "100%",
-              minWidth: "100%",
-              border: "1px solid #d8dee0",
-            }}
-          >
-            <ReactPlayer
-              url={wistiaUrl}
-              height="100%"
-              width="100%"
-              controls={true}
-              style={{ position: "absolute", top: 0, left: 0 }}
-            />
-          </div>
+          <Video wistiaUrl={wistiaUrl} />
         )}
       </Grid>
-      <Grid
-        item
-        container
-        direction="column"
-        alignItems="center"
-        justifyContent="flex-end"
-      >
-        <Typography
-          variant="h4"
-          sx={{
-            textAlign: "center",
-            m: 2,
-            color: "#19305A",
-            fontWeight: 700,
-          }}
-        >
-          {contentHeader}
-        </Typography>
-
-        <Typography
-          variant="h6"
-          sx={{
-            textAlign: "center",
-            color: "#19305A",
-            mb: 1,
-            // maxWidth: "75%",
-            lineHeight: "1.2",
-          }}
-        >
-          {contentText}
-        </Typography>
-
-        <a
-          href={ctaLink}
-          style={{ textDecoration: "none", marginTop: "1rem" }}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Button variant="contained" color="primary">
-            {ctaText}
-          </Button>
-        </a>
-      </Grid>
+      <SlideFooter
+        contentHeader={contentHeader}
+        contentText={contentText}
+        ctaLink={ctaLink}
+        ctaText={ctaText}
+      />
     </>
   )
 }
@@ -127,6 +62,7 @@ export const ContentCarousel = ({ carouselArray }) => {
       })
     }
   }, [carouselArray])
+
   return (
     <Carousel
       autoPlay={carouselOptions.autoPlay}
