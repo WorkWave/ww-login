@@ -3,17 +3,14 @@ import React from "react"
 import { GatsbyImage } from "gatsby-plugin-image"
 
 //gatsby image can't work with svgs. ternary allows rendering of any image type
-// 5/2 update with gif. needs to be fixed with ternary added
+// this component typically has gatsby image data for performance reasons. when we're using a gif, it seems to break styling. readd ternary when gifs are fixed
 
 export const Image = ({ contentImage }) => {
   return (
-    <GatsbyImage
-      image={contentImage?.asset?.gatsbyImageData}
+    <img
+      src={contentImage.asset.gatsbyImageData?.images.fallback?.src}
       alt="chart"
-      imgStyle={{ objectFit: "contain" }}
-      style={{
-        borderRadius: "10px",
-      }}
+      style={{ borderRadius: "8px" }}
     />
   )
 }
