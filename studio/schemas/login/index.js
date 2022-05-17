@@ -63,8 +63,8 @@ export default {
 			type: 'array',
 			of: [
 				{
-					title: 'Content',
-					type: 'content',
+					type: 'reference',
+					to: { type: 'content' },
 				},
 			],
 		},
