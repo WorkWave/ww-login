@@ -48,7 +48,7 @@ export const ContentCarousel = ({ carouselArray }) => {
     autoPlay: true,
     animation: "slide",
     indicators: true,
-    timeout: 6000,
+    timeout: 1000,
     navButtonsAlwaysVisible: false,
     navButtonsAlwaysInvisible: true,
   })
@@ -68,7 +68,8 @@ export const ContentCarousel = ({ carouselArray }) => {
       autoPlay={carouselOptions.autoPlay}
       animation={carouselOptions.animation}
       indicators={carouselOptions.indicators}
-      timeout={carouselOptions.timeout}
+      interval={6000}
+      // timeout={carouselOptions.timeout}
       navButtonsAlwaysVisible={carouselOptions.navButtonsAlwaysVisible}
       navButtonsAlwaysInvisible={carouselOptions.navButtonsAlwaysInvisible}
       indicatorContainerProps={{
