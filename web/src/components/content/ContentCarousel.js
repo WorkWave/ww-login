@@ -45,10 +45,10 @@ const Slide = ({ slide }) => {
 
 export const ContentCarousel = ({ carouselArray }) => {
   const [carouselOptions, setCarouselOptions] = useState({
-    autoPlay: false,
+    autoPlay: true,
     animation: "slide",
     indicators: true,
-    timeout: 500,
+    timeout: 1000,
     navButtonsAlwaysVisible: false,
     navButtonsAlwaysInvisible: true,
   })
