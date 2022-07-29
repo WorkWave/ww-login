@@ -36,7 +36,11 @@ export const query = graphql`
       content {
         contentImage {
           asset {
-            gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
+            gatsbyImageData(
+              layout: CONSTRAINED
+              placeholder: BLURRED
+              width: 568
+            )
           }
         }
         wistiaUrl
