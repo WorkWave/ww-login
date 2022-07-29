@@ -10,7 +10,7 @@ export const Image = ({ contentImage }) => {
     <img
       src={contentImage.asset.gatsbyImageData?.images.fallback?.src}
       alt="chart"
-      style={{ borderRadius: "8px" }}
+      style={{ borderRadius: "8px", maxWidth: "569px", maxHeight: "481px" }}
     />
   )
 }
