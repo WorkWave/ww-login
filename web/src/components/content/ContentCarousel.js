@@ -48,7 +48,7 @@ export const ContentCarousel = ({ carouselArray }) => {
     autoPlay: true,
     animation: "slide",
     indicators: true,
-    timeout: 1000,
+    timeout: 6000,
     navButtonsAlwaysVisible: false,
     navButtonsAlwaysInvisible: true,
   })
