@@ -46,7 +46,12 @@ export const SlideFooter = ({
         target="_blank"
         rel="noopener noreferrer"
       >
-        <Button variant="contained" color="primary">
+        <Button
+          variant="contained"
+          color="primary"
+          size="large"
+          style={{ fontSize: "1.2rem" }}
+        >
           {ctaText}
         </Button>
       </a>

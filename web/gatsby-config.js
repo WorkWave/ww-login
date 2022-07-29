@@ -21,6 +21,14 @@ module.exports = {
       },
     },
     {
+      resolve: "gatsby-plugin-google-tagmanager",
+      options: {
+        id: "GTM-N7GLTCG",
+        defaultDataLayer: { platform: "gatsby" },
+        enableWebVitalsTracking: true,
+      },
+    },
+    {
       resolve: "gatsby-source-sanity",
       options: {
         projectId: "7wxhdiq5",

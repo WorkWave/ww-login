@@ -1,8 +1,13 @@
 export default {
 	title: 'Content',
 	name: 'content',
-	type: 'object',
+	type: 'document',
 	fields: [
+		{
+			name: 'title',
+			title: 'Title',
+			type: 'string',
+		},
 		{
 			name: 'contentImage',
 			title: 'Content Image',
